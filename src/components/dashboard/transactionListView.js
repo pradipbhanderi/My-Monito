@@ -1,6 +1,6 @@
 import React from 'react';
 import {FlatList, Text, View, StyleSheet} from 'react-native';
-import {TransactionsCell} from './TransactionsCell';
+import {TransactionsCell} from './transactionsCell';
 export const TransactionListView = () => {
   return (
     <View>

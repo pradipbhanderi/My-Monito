@@ -1,6 +1,6 @@
 import {Image, Text, View, StyleSheet} from 'react-native';
 import React from 'react';
-import { COLORS } from "../../theme/colors";
+import {COLORS} from '../../theme/colors';
 
 export const IncomeCell = ({icon, label, income, valueColor = 'black'}) => {
   return (

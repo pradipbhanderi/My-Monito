@@ -1,5 +1,3 @@
-import {re} from '@babel/core/lib/vendor/import-meta-resolve';
-
 export const Images = {
   down: require('./img_sort_down.png'),
   plus: require('./img_plus.png'),
@@ -8,4 +6,16 @@ export const Images = {
   plus_white: require('./img_plus_white.png'),
   menu: require('./img_menu.png'),
   search: require('./img_search.png'),
+  model: require('./img_model.png'),
+  next: require('./img_next.png'),
+  transaction: require('./img_transaction.png'),
+  like: require('./img_circle.png'),
+  delete: require('./img_delete.png'),
+  info: require('./img_info.png'),
+  list: require('./img_list.png'),
+  setting: require('./img_settings.png'),
+  translate: require('./img_translate.png'),
+  dollar: require('./img_dollar.png'),
+  alarm: require('./img_alarm.png'),
+  logout: require('./img_logout.png'),
 };

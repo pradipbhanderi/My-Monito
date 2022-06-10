@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {Images} from '../../assets/images';
-import {IncomeCell} from './IncomeCell';
+import {IncomeCell} from './incomeCell';
 
 export const Income = () => {
   const Space = <View style={{width: 12}} />;

@@ -1,11 +1,11 @@
 import React from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
-import {DatePicker} from '../components/dashboard/DatePicker';
-import {Income} from '../components/dashboard/Income';
-import {TransactionsCell} from '../components/dashboard/TransactionsCell';
+import {DatePicker} from '../components/dashboard/datePicker';
+import {Income} from '../components/dashboard/income';
+import {TransactionsCell} from '../components/dashboard/transactionsCell';
 import {COLORS} from '../theme/colors';
-import {TransactionListView} from '../components/dashboard/TransactionListView';
-import {BottomNavigation} from '../components/dashboard/bottomNavigation';
+import {TransactionListView} from '../components/dashboard/transactionListView';
+import {BottomSheetMenu} from '../components/dashboard/bottomSheetMenu';
 import {Images} from '../assets/images';
 
 export const DashBoard = () => {
@@ -20,8 +20,7 @@ export const DashBoard = () => {
       <View style={styles.container}>
         <TransactionListView />
       </View>
-
-      <BottomNavigation />
+      <BottomSheetMenu />
     </View>
   );
 };

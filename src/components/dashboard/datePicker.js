@@ -1,7 +1,7 @@
 import React from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
 import {Images} from '../../assets/images';
-import { COLORS } from "../../theme/colors";
+import {COLORS} from '../../theme/colors';
 export const DatePicker = () => {
   return (
     <View style={styles.container}>
