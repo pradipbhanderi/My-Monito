@@ -80,7 +80,7 @@ export const BottomSheetMenu = () => {
 const styles = StyleSheet.create({
   container: {
     width: '100%',
-    backgroundColor: 'white',
+    backgroundColor: COLORS.grey3,
   },
   containerBottom: {
     flexDirection: 'row',
@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.yellow,
     textShadowRadius: 10,
     borderWidth: 3,
-    borderColor: COLORS.grey3,
+    borderColor: 'white',
     top: -25,
     position: 'absolute',
   },

@@ -12,6 +12,7 @@ import {COLORS} from '../theme/colors';
 import {Fonts} from '../theme/fonts';
 import {Images} from '../assets/images';
 import {useNavigation} from '@react-navigation/native';
+import {ChangeCurrency} from '../components/setting/changeCurrency';
 
 export const Setting = () => {
   const [isEnabled, setIsEnabled] = useState(false);
@@ -75,8 +76,11 @@ export const Setting = () => {
         <View style={styles.modalMainContainer}>
           <Pressable
             onPress={() => setModalVisible(false)}
-            style={{flex: 0.5, backgroundColor: '#00000000'}}
+            style={{flex: 0.4, backgroundColor: '#00000000'}}
           />
+          <View style={styles.modelSecondPart}>
+            <ChangeCurrency />
+          </View>
         </View>
       </Modal>
     </View>
@@ -209,5 +213,13 @@ const styles = StyleSheet.create({
   modalMainContainer: {
     flex: 1,
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
+  },
+  modelFirstPart: {
+    flex: 0.4,
+  },
+  modelSecondPart: {
+    flex: 0.6,
+    backgroundColor: 'white',
+    flexDirection: 'column',
   },
 });

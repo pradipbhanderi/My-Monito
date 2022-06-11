@@ -7,6 +7,26 @@ import {COLORS} from '../theme/colors';
 import {TransactionListView} from '../components/dashboard/transactionListView';
 import {BottomSheetMenu} from '../components/dashboard/bottomSheetMenu';
 import {Images} from '../assets/images';
+import {RadioGroup} from '../components/radiogroup/radioGroup';
+
+const radioButtonArray = [
+  {
+    key: '1',
+    label: 'left side',
+  },
+  {
+    key: '2',
+    label: 'right side',
+  },
+  {
+    key: '3',
+    label: 'top',
+  },
+  {
+    key: '4',
+    label: 'bottom',
+  },
+];
 
 export const DashBoard = () => {
   return (
@@ -19,6 +39,7 @@ export const DashBoard = () => {
       <View style={styles.border} />
       <View style={styles.container}>
         <TransactionListView />
+        {/*<RadioGroup options={radioButtonArray} />*/}
       </View>
       <BottomSheetMenu />
     </View>
@@ -28,6 +49,7 @@ export const DashBoard = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: 'white',
   },
   containerHeader: {
     marginStart: 10,

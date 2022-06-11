@@ -9,7 +9,7 @@ export const Images = {
   model: require('./img_model.png'),
   next: require('./img_next.png'),
   transaction: require('./img_transaction.png'),
-  like: require('./img_circle.png'),
+  like: require('./img_like.png'),
   delete: require('./img_delete.png'),
   info: require('./img_info.png'),
   list: require('./img_list.png'),
@@ -18,4 +18,5 @@ export const Images = {
   dollar: require('./img_dollar.png'),
   alarm: require('./img_alarm.png'),
   logout: require('./img_logout.png'),
+  circle: require('./img_circle.png'),
 };
