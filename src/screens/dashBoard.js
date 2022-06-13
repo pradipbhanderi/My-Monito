@@ -8,6 +8,7 @@ import {TransactionListView} from '../components/dashboard/transactionListView';
 import {BottomSheetMenu} from '../components/dashboard/bottomSheetMenu';
 import {Images} from '../assets/images';
 import {RadioGroup} from '../components/radiogroup/radioGroup';
+import { UpdateTransaction } from "./updateTransaction";
 
 const radioButtonArray = [
   {
@@ -38,8 +39,8 @@ export const DashBoard = () => {
       <Income />
       <View style={styles.border} />
       <View style={styles.container}>
-        <TransactionListView />
-        {/*<RadioGroup options={radioButtonArray} />*/}
+        {/*<TransactionListView />*/}
+        <UpdateTransaction />
       </View>
       <BottomSheetMenu />
     </View>

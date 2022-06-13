@@ -22,7 +22,7 @@ export const Setting = () => {
   return (
     <View style={styles.container}>
       <View style={styles.containerHeader}>
-        <Text style={styles.textTransactions}>Settings</Text>
+        <Text style={styles.headerText}>Settings</Text>
       </View>
       {/*for language */}
       <View style={styles.mainContainerLanguage}>
@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
     marginEnd: 10,
     marginTop: 15,
   },
-  textTransactions: {
+  headerText: {
     textAlign: 'left',
     flex: 1,
     fontFamily: Fonts.medium,

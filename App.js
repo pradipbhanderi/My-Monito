@@ -5,6 +5,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {NavigationContainer} from '@react-navigation/native';
 import {Categories} from './src/screens/categories';
 import {Setting} from './src/screens/setting';
+import {Profile} from './src/screens/profile';
 
 const Stack = createNativeStackNavigator();
 
@@ -15,6 +16,7 @@ export function App() {
         <Stack.Screen name="dashBoard" component={DashBoard} />
         <Stack.Screen name="categories" component={Categories} />
         <Stack.Screen name="setting" component={Setting} />
+        <Stack.Screen name="profile" component={Profile} />
       </Stack.Navigator>
     </NavigationContainer>
   );

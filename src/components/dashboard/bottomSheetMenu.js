@@ -20,6 +20,7 @@ export const BottomSheetMenu = () => {
           source={Images.plus_white}
         />
       </View>
+      {/*bottomSheetOenClick*/}
       <View style={styles.containerMenuImage}>
         <Pressable onPress={() => setModalVisible(true)}>
           <Image style={styles.menuButton} source={Images.menu} />
@@ -35,16 +36,20 @@ export const BottomSheetMenu = () => {
           />
           {/*for menu list*/}
           <View style={styles.modelContainer}>
-            <View style={styles.profileContainer}>
-              <Image style={styles.image} source={Images.model} />
-              <View style={styles.containerNameEmail}>
-                <Text style={styles.txtName}>John Doe</Text>
-                <Text style={styles.txtEmail}>johndoe@gmail.com</Text>
+            {/*profileClick*/}
+            <Pressable onPress={() => navigation.navigate('profile')}>
+              <View style={styles.profileContainer}>
+                <Image style={styles.image} source={Images.model} />
+                <View style={styles.containerNameEmail}>
+                  <Text style={styles.txtName}>John Doe</Text>
+                  <Text style={styles.txtEmail}>johndoe@gmail.com</Text>
+                </View>
+                <Pressable onPress={() => setModalVisible(false)}>
+                  <Image style={styles.imageNext} source={Images.next} />
+                </Pressable>
               </View>
-              <Pressable onPress={() => setModalVisible(false)}>
-                <Image style={styles.imageNext} source={Images.next} />
-              </Pressable>
-            </View>
+            </Pressable>
+
             <View style={styles.viewBorder} />
             <Pressable
               onPress={() => {
@@ -177,6 +182,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     width: 30,
     height: 30,
+    marginTop: 5,
     marginEnd: 10,
     tintColor: COLORS.themeColor,
   },

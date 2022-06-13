@@ -19,4 +19,8 @@ export const Images = {
   alarm: require('./img_alarm.png'),
   logout: require('./img_logout.png'),
   circle: require('./img_circle.png'),
+  editPan: require('./img_edit_pen.png'),
+  emoji: require('./img_emoji.png'),
+  calendar: require('./img_calendar.png'),
+  camera: require('./img_camera.png'),
 };
